@@ -1,0 +1,70 @@
+# api call for listing tuff details 
+
+###
+GET http://127.0.0.1:8000/turfs/
+
+
+# api call for craeating turf details
+
+###
+POST http://127.0.0.1:8000/turfs/
+Content-Type: application/json
+
+{
+    "turf_name":"Royal Turf",
+    "location":"Kochi",
+    "sport_type":"cricket",
+    "price": 1500,
+    "time":"12:00",
+    "contact_number":"5678904321",
+    "email":"royal@gmail.com"
+
+}
+
+
+# api call for retrieving
+
+###
+GET http://127.0.0.1:8000/turfs/1/
+
+# api call  for updating 
+###
+PUT http://127.0.0.1:8000/turfs/3/
+Content-Type: application/json
+
+{
+    "turf_name":"Bridan Turf",
+    "location":"Trivandrum",
+    "sport_type":"volleyball",
+    "price": 1000,
+    "time":"12:00",
+    "contact_number":"8976543210",
+    "email":"bridan@gmail.com"
+}
+
+# api call for deleting 
+
+###
+DELETE http://127.0.0.1:8000/turfs/4/
+
+
+
+# api call for listing booking details
+###
+GET http://127.0.0.1:8000/bookings/
+
+#api call for creating bookings
+###
+POST http://127.0.0.1:8000/bookings/
+Content-Type: application/json
+
+{
+    "name":"anamika",
+    "phone_number":"1234567891",
+    "booking_date":"2026-02-12",
+    "turf_id":9,
+    "start_time":"10:00:00",
+    "end_time":"12:00:00"
+    
+
+}
